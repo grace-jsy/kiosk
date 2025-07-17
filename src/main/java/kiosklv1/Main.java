@@ -6,8 +6,18 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter Start: ");
-        String startBtn = scanner.nextLine();
+        String startBtn = "Start";
+
+        while(true) {
+            System.out.print("Enter Start: ");
+            startBtn = scanner.nextLine();
+
+            if (startBtn.equalsIgnoreCase("start")) {
+                break;
+            } else {
+                System.out.println("Wrong text, try again");
+            }
+        }
 
         System.out.println("[ SHAKESHACK MENU ]");
         System.out.println("1. ShackBurger    | ₩ 6.9 | 토마토, 양상추, 쉑소스가 토핑된 치즈버거");
@@ -19,7 +29,6 @@ public class Main {
 
 
         while (startBtn.equalsIgnoreCase("start")) {
-
             int inputMenuNum = scanner.nextInt();
 
             if (inputMenuNum == 0) {
