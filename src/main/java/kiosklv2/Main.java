@@ -45,25 +45,22 @@ public class Main {
             switch (inputMenuNum) {
                 case 1:
                     System.out.println("Your Menu is: " + menuItems.get(0));
-                    System.exit(0);
                     break;
                 case 2:
                     System.out.println("Your Menu is: " + menuItems.get(1));
-                    System.exit(0);
                     break;
                 case 3:
                     System.out.println("Your Menu is: " + menuItems.get(2));
-                    System.exit(0);
                     break;
                 case 4:
                     System.out.println("Your Menu is: " + menuItems.get(3));
-                    System.exit(0);
                     break;
                 case 0:
                     System.out.println("Exiting the program.");
                     System.exit(0);
                     return;
-            }
+            } System.exit(0);
+
         }
 
     }
